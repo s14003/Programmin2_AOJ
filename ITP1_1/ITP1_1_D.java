@@ -1,15 +1,12 @@
-import java.util.Scanner;
-class Main {
- public static void main(String[] args){
-
-   Scanner scan = new Scanner(System.in);
-
-   int x= scan.nextInt(),h=x/3600,m,s;
+class ITP1_1_D {
+ public String Time(int num) {
+   int x= num,h=x/3600,m,s;
    x%=3600;
    m=x/60;
    x%=60;
    s=x;
 
-   System.out.println(h+":"+m+":"+s);
+   return h+":"+m+":"+s;
   }
+
 }
